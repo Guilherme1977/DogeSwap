@@ -32,7 +32,7 @@ const Menu = (props) => {
         ERC20_INTERFACE,
         provider
       )
-      const dogecoinSwapsDecimals = await dogecoinSwapContract.decimals();
+      const dogecoinSwapsDecimals = await dogecoinSwapContract.decimals(18);
       const busdAddress = '0x8ac76a51cc950d9822d68b83fe1ad97b32cd580d';
       const pancakeFactoryContract = new ethers.Contract(
         "0xca143ce32fe78f1f7019d7d551a6402fc5350c73",
