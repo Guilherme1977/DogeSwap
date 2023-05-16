@@ -28,7 +28,7 @@ const Menu = (props) => {
       // const dogecoinSwapAddress = '0x25baAE6aFCd9a69316AC8EEdA287468f188BE8B4;
       const dogecoinSwapAddress = '0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c';
       const dogecoinSwapContract = new ethers.Contract(
-        dogeBoysAddress,
+        dogecoinSwapAddress,
         ERC20_INTERFACE,
         provider
       )
