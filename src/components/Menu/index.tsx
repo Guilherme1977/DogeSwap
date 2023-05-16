@@ -26,13 +26,13 @@ const Menu = (props) => {
         "https://bsc-dataseed.binance.org/"
       );
       // const dogecoinSwapAddress = '0x25baAE6aFCd9a69316AC8EEdA287468f188BE8B4;
-      const dogeBoysAddress = '0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c';
-      const dogeBoysContract = new ethers.Contract(
+      const dogecoinSwapAddress = '0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c';
+      const dogecoinSwapContract = new ethers.Contract(
         dogeBoysAddress,
         ERC20_INTERFACE,
         provider
       )
-      const dogeBoysDecimals = await dogeBoysContract.decimals();
+      const dogecoinSwapsDecimals = await dogeBoysContract.decimals();
       const busdAddress = '0x8ac76a51cc950d9822d68b83fe1ad97b32cd580d';
       const pancakeFactoryContract = new ethers.Contract(
         "0xca143ce32fe78f1f7019d7d551a6402fc5350c73",
