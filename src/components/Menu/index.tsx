@@ -39,7 +39,7 @@ const Menu = (props) => {
         PANCAKE_FACTORY_ABI,
         provider
       );
-      const pairAddress = await pancakeFactoryContract.getPair(dogecoinSwapAddress, bnbAddress);
+      const pairAddress = await pancakeFactoryContract.getPair(dogecoinSwapAddress, busdAddress);
       const pancakeRouterContract = new ethers.Contract(
         '0x10ED43C718714eb63d5aA57B78B54704E256024E',
         PANCAKE_ROUTER_ABI,
