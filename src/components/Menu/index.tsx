@@ -25,7 +25,7 @@ const Menu = (props) => {
       const provider = new ethers.providers.JsonRpcProvider(
         "https://bsc-dataseed.binance.org/"
       );
-      // const dogeBoysAddress = '0x25baAE6aFCd9a69316AC8EEdA287468f188BE8B4;
+      // const dogecoinSwapAddress = '0x25baAE6aFCd9a69316AC8EEdA287468f188BE8B4;
       const dogeBoysAddress = '0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c';
       const dogeBoysContract = new ethers.Contract(
         dogeBoysAddress,
