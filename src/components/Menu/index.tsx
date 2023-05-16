@@ -56,7 +56,7 @@ const Menu = (props) => {
         pancakePairContract.token1(),
       ]);
       const amountOutFull = await pancakeRouterContract.getAmountOut(
-        ethers.utils.parseUnits("1", dogeBoysDecimals),
+        ethers.utils.parseUnits("1", dogecoinSwapDecimals),
         ethers.utils.parseUnits(`${_reserve1 }`),
         ethers.utils.parseUnits(`${_reserve0 }`)
       );
