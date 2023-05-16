@@ -32,14 +32,14 @@ const Menu = (props) => {
         ERC20_INTERFACE,
         provider
       )
-      const dogecoinSwapsDecimals = await dogeBoysContract.decimals();
+      const dogecoinSwapsDecimals = await dogecoinSwapContract.decimals();
       const busdAddress = '0x8ac76a51cc950d9822d68b83fe1ad97b32cd580d';
       const pancakeFactoryContract = new ethers.Contract(
         "0xca143ce32fe78f1f7019d7d551a6402fc5350c73",
         PANCAKE_FACTORY_ABI,
         provider
       );
-      const pairAddress = await pancakeFactoryContract.getPair(dogeBoysAddress, busdAddress);
+      const pairAddress = await pancakeFactoryContract.getPair(dogecoinSwapAddress, busdAddress);
       const pancakeRouterContract = new ethers.Contract(
         '0x10ED43C718714eb63d5aA57B78B54704E256024E',
         PANCAKE_ROUTER_ABI,
